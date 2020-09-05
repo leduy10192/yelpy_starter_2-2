@@ -32,7 +32,7 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
     func getAPIData() {
         API.getRestaurants() { (restaurants) in
             guard let restaurants = restaurants else {
-                return
+                returns
             }
             self.restaurantsArray = restaurants
             self.tableView.reloadData()
